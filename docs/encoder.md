@@ -59,9 +59,20 @@ You can first do a 'dry-run' using the `--check` option:
 
 ### Audioscience Cards
 
-A note on Audioscience cards: 
 
-Here some manual work is required. If used more often there should be a better way to handle this.
+#### Playbook Settings
+
+To enable the Audioscience configuration change the `audio_interface`settings for the respective host:
+
+    encoder_audio_interface: asi5211
+    encoder_asihpi_version: 4.14.03
+    encoder_audio_interface_input: analog
+    encoder_audio_interface_drift_compensation: yes
+
+
+#### A note on Audioscience cards: 
+
+Here some manual work is eventually required. If used more often there should be a better way to handle this.
 
 The drivers (snd_asihpi) for the card [ASI5211](http://www.audioscience.com/internet/products/sound_cards/asi5111_5211.htm) come
 with the Debian kernel.  
