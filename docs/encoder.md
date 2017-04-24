@@ -55,7 +55,7 @@ You can first do a 'dry-run' using the `--check` option:
 
     ansible-playbook -i hosts-encoder -l <station-id>.encoder.digris.ch encoder.yml --check
 
-Note:
+#### Note:
 
 Make sure no user is logged in as `odr` on the machine. Else the playbook will fail when setting up uid/gid.
 
